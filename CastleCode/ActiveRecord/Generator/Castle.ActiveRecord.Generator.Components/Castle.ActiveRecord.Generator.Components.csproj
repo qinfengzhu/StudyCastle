@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F628A61F-FDB0-4680-843C-96707011A68C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Castle.ActiveRecord.Generator.Components</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Castle.ActiveRecord.Generator.Components</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActiveRecordDescriptorBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BuildContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\CodeDomGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\CodeProviderFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\CodeProviderInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\ICodeDomGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\ICodeProviderFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\IProjectGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CodeGenerator\ProjectGenerator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\AbstractActiveRecordDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ActiveRecordBaseDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ActiveRecordDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ActiveRecordDescriptorJoinedSubClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ActiveRecordDescriptorSubClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ActiveRecordOperationDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ActiveRecordPropertyDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ColumnDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ColumnDefinitionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\ConnectionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DatabaseDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DatabaseDefinitionBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\DatabaseDefinitionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\IActiveRecordDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\IConnectionFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\IDatabaseDefinitionBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\TableDefinition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Database\TableDefinitionCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IActiveRecordDescriptorBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ILogger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="INamingService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IPlainFieldInferenceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IRelationshipBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IRelationshipInferenceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITypeInferenceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NamingService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlainFieldInferenceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Project.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelationshipBuilder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RelationshipInferenceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeInferenceService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utils\Pair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

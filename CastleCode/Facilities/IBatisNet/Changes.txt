@@ -1,0 +1,10 @@
+
+Beta 1
+
+- Updated to new iBatis version (kudos to Chad Humphries)
+
+
+Alpha Version 1.0.0
+
+- First release
+

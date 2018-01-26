@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{554AF9C4-9D3E-4570-A1DD-61B988DDFA6F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Castle.ActiveRecord.Generator</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Castle.ActiveRecord.Generator</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\bin\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Castle.ActiveRecord.Generator.Components\Castle.ActiveRecord.Generator.Components.csproj">
+      <Name>Castle.ActiveRecord.Generator.Components</Name>
+      <Project>{F628A61F-FDB0-4680-843C-96707011A68C}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="ADODB">
+      <Name>ADODB</Name>
+      <HintPath>..\lib\ADODB.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.DynamicProxy">
+      <Name>Castle.DynamicProxy</Name>
+      <HintPath>..\..\..\InversionOfControl\bin\Castle.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.MicroKernel">
+      <Name>Castle.MicroKernel</Name>
+      <HintPath>..\..\..\InversionOfControl\bin\Castle.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Model">
+      <Name>Castle.Model</Name>
+      <HintPath>..\..\..\InversionOfControl\bin\Castle.Model.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Windsor">
+      <Name>Castle.Windsor</Name>
+      <HintPath>..\..\..\InversionOfControl\bin\Castle.Windsor.dll</HintPath>
+    </Reference>
+    <Reference Include="MSDASC">
+      <Name>MSDASC</Name>
+      <HintPath>..\lib\MSDASC.dll</HintPath>
+    </Reference>
+    <Reference Include="NetronGraphLib">
+      <Name>NetronGraphLib</Name>
+      <HintPath>..\..\..\SharedLibs\netron\NetronGraphLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NetronMaths">
+      <Name>NetronMaths</Name>
+      <HintPath>..\..\..\SharedLibs\netron\NetronMaths.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <Name>WeifenLuo.WinFormsUI.Docking</Name>
+      <HintPath>..\lib\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actions\AboutAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\AbstractAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\AddDatabaseAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\CastleSiteAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\CodePreviewAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\CreateJoinedSubClassAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\CreateSubClassAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ExitAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\GenerateCodeAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\NewArDescriptorUsingWizard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ProjectNewAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ProjectOpenAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ProjectSaveAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\Sets\ActiveRecordGraphViewActionSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\Sets\FileActionSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\Sets\HelpActionSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\Sets\ProjectExplorerActionSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\Sets\ViewActionSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ShowPropertiesAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ViewAvailableItemsAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ViewProjectExplorerAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ARGeneratorLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ActiveRecordBasePropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\ActiveRecordPropertiesDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\AddRelationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\CodePreviewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DatabaseConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\EditRelationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\GenCodeDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\NewSubClassDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\AbstractControlPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\ClassNamePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\IWizardPage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\MappingPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\NewARClassWizard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\RelationsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\TableSelectionPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\WelcomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialogs\Wizards\WizardBaseDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IActionSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IApplicationLayout.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Icons\ImageConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IWorkspace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parts\ActiveRecordGraphView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parts\AvailableShapes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parts\OutputView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parts\ProjectExplorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Parts\Shapes\AbstractARShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parts\Shapes\ActiveRecordBaseClassShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Parts\Shapes\ActiveRecordShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceRegistry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Starter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Icons\cl1.gif" />
+    <Content Include="Icons\cl2.gif" />
+    <Content Include="Icons\cl3.gif" />
+    <Content Include="Icons\cl4.gif" />
+    <Content Include="Icons\cl5.gif" />
+    <Content Include="Icons\cl6.gif" />
+    <Content Include="Icons\cl7.gif" />
+    <Content Include="Icons\db1.gif" />
+    <Content Include="Icons\db2.gif" />
+    <Content Include="Icons\db3.gif" />
+    <Content Include="Icons\db4.gif" />
+    <Content Include="Icons\db5.gif" />
+    <Content Include="Icons\db6.gif" />
+    <Content Include="Icons\db7.gif" />
+    <Content Include="Icons\db8.gif" />
+    <EmbeddedResource Include="Dialogs\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ActiveRecordBasePropertiesDialog.resx">
+      <DependentUpon>ActiveRecordBasePropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\ActiveRecordPropertiesDialog.resx">
+      <DependentUpon>ActiveRecordPropertiesDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\AddRelationDialog.resx">
+      <DependentUpon>AddRelationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\CodePreviewDialog.resx">
+      <DependentUpon>CodePreviewDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DatabaseConnectionDialog.resx">
+      <DependentUpon>DatabaseConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\EditRelationDialog.resx">
+      <DependentUpon>EditRelationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\GenCodeDialog.resx">
+      <DependentUpon>GenCodeDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\NewSubClassDialog.resx">
+      <DependentUpon>NewSubClassDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\AbstractControlPage.resx">
+      <DependentUpon>AbstractControlPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\ClassNamePage.resx">
+      <DependentUpon>ClassNamePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\MappingPage.resx">
+      <DependentUpon>MappingPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\NewARClassWizard.resx">
+      <DependentUpon>NewARClassWizard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\RelationsPage.resx">
+      <DependentUpon>RelationsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\TableSelectionPage.resx">
+      <DependentUpon>TableSelectionPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\WelcomePage.resx">
+      <DependentUpon>WelcomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\Wizards\WizardBaseDialog.resx">
+      <DependentUpon>WizardBaseDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts\ActiveRecordGraphView.resx">
+      <DependentUpon>ActiveRecordGraphView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts\AvailableShapes.resx">
+      <DependentUpon>AvailableShapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts\OutputView.resx">
+      <DependentUpon>OutputView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts\ProjectExplorer.resx">
+      <DependentUpon>ProjectExplorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Parts\Shapes\Resources\ARBaseShape.gif" />
+    <EmbeddedResource Include="Parts\Shapes\Resources\ARShape.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
